@@ -12,3 +12,74 @@
 --footer: #222222;
 --primary: #000000;
 }
+/* Temporary */
+.debug {
+    border: 1px solid orange;
+}
+/* Wrap and general*/
+.wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary);
+    color: var(--light-text);
+}
+/* Flex */
+.d-flex {
+    display: flex;
+}
+.just-end {
+    justify-content: flex-end;
+}
+
+/* header */
+.header-container {
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+}
+.right {
+    padding: 5px;
+}
+.right.speaker {
+    margin-right: 5px;
+}
+/* main */
+.participants {
+    width: calc(100% - 140px);
+    height: calc(100vh - 145px);
+    margin: 0 auto;
+    flex-flow: row wrap;
+
+}
+.col {
+    width: calc(100% / 7 );
+    height: calc(100% / 5);
+    padding: 2px 1px;
+}
+.image {
+    position: relative;
+}
+img {
+    width: 100%;
+    object-fit: fill;
+}
+.voice {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* Footer */
+.footer-container {
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+}
+.left-foot {
+    width: 20%;
+}
+.central-foot {
+    width: 60%;
+}
+.right-foot {
+    width: 20%;
+}
