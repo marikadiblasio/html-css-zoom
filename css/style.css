@@ -1,0 +1,14 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Color styles */
+--selected-icon: #4AC800;
+--end-text: #DD1714;
+--light-text: #FFFFFF;
+--bg-selected: #4A4A4A;
+--footer: #222222;
+--primary: #000000;
+}
