@@ -45,9 +45,9 @@
 /* main */
 main {
     width: calc(100% - 140px);
-    height: calc(100vh - 120px);
+    height: calc(100vh - 115px);
     margin: 0 auto;
-    overflow: hidden;
+    overflow-y: auto;
 }
 .participants {
     flex-flow: row wrap;
@@ -56,14 +56,16 @@ main {
 }
 .col {
     width: calc(100% / 7);
-    height: calc(100% / 5);
+    /* height: calc(100% / 5); non si dà l'altezza, perché c'è già il contenuto - img */
     padding: 1px;
+
 }
 .image {
     position: relative;
 }
 img {
     width: 100%;
+    display: block;
 }
 .voice {
     position: absolute;
@@ -79,10 +81,12 @@ footer {
     background-color: var(--footer);
 }
 .footer-container {
-justify-content: space-between;
+    justify-content: space-between;
+    align-content: center;
 }
 .left-foot {
     width: 20%;
+    align-items: center;
 }
 .central-foot {
     width: 60%;
@@ -105,15 +109,14 @@ justify-content: space-between;
     background-color: var(--bg-selected);
     color: var(--end-text);
     width: 180px;
-    position: absolute;
-    right: 0;
-    /* top: 50%; */
+    height: 50px;
     line-height: 50px;
     text-align: center;
 }
 .right-foot {
     width: 20%;
-    position: relative;
+    justify-content: flex-end;
+    align-items: center;
 }
 .minicol, .angle {
     display: inline-block;
